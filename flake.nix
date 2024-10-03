@@ -10,7 +10,7 @@
         toolchain = pkgs.rustPlatform;
       in rec {
         packages.default = toolchain.buildRustPackage {
-          pname = "get_traffic";
+          pname = "get-traffic";
           version = "0.0.1";
           src = ./.;
           cargoLock.lockFile = ./Cargo.lock;

@@ -118,7 +118,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "get_traffic"
+name = "get-traffic"
 version = "0.1.0"
 dependencies = [
  "crossterm",

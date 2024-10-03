@@ -8,7 +8,7 @@ use std::{env, fs::File, io::Read};
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut config = String::new();
     File::open(format!(
-        "{}/.config/get_traffic/config.json",
+        "{}/.config/get-traffic/config.json",
         env::var("HOME")?
     ))?
     .read_to_string(&mut config)?;
