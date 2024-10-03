@@ -1,0 +1,10 @@
+[package]
+name = "get_traffic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.28.1"
+curl = "0.4.47"
+human_bytes = { version = "0.4.3", features = ["fast"], default-features = false }
+sonic-rs = "0.3.13"
