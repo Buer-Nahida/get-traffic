@@ -19,7 +19,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     handle.url(&format!(
         "http://{}:{}/traffic",
         config.get("host").as_str().unwrap(),
-        config.get("port").as_str().unwrap()
+        config.get("port").as_u64().unwrap()
     ))?;
     let mut list = List::new();
     list.append(&format!(
